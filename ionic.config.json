@@ -1,0 +1,8 @@
+{
+  "name": "sisgep-app",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
