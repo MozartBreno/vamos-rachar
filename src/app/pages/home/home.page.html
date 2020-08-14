@@ -2,15 +2,21 @@
   Vamos Rachar
 </ion-header>
 <ion-content>
-    <ion-input type="number" placeholder="Valor total " [(ngModel)]= "valorTotal" ></ion-input>
-    <ion-input type="number" placeholder="Quantidade de pessoas "  [(ngModel)]= "quantidadePessoas" (keyup)="dividir()"></ion-input>
-
-    <button (click)="dividir()">Dividir</button> 
-    <button (click)="falar()">Falar</button> 
-  
-    <button ion-button clear color="dark" icon-only (click)="normalShare()">
-      <ion-icon name="share"></ion-icon>
-  </button>
-  <br/>
+  <div class="form">
+    <ion-input placeholder="Valor total" type="number"  [(ngModel)]= "valorTotal" ></ion-input>
+    <ion-input placeholder="Quantidade de pessoas" type="number"   [(ngModel)]= "quantidadePessoas" (keyup)="dividir()"></ion-input>
+  </div>
+    <div id="botoes"> 
+      <button class="botao" (click)="dividir()">Dividir</button> 
+      <button class="botao" (click)="falar()">Falar</button> 
       <span id="resultado">Total para cada pessoa : R$ {{resultado}}</span>
+    </div>
+    <br/>
+    
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+      <ion-fab-button (click)="normalShare()">
+        <ion-icon name="share"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  
 </ion-content>

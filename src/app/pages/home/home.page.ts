@@ -24,8 +24,12 @@ export class HomePage
     }
   }
   normalShare() {
-    this.socialSharing.share("Compartilhando o conteúdo de um aplicativo com o Social Sharing.", null, "www/assets/images/ionic-logo.png", null);
+   
+    this.socialSharing.share("Teste", null, "Valor unitário : R$ " +this.resultado.toString(), null);
   }
+  whatsappShare() {
+    this.socialSharing.shareViaWhatsApp("Valor a ser pago","Valor unitário : R$ " +this.resultado.toString(), null);
+}
   falar(){
   //   this.tts.speak(this.resultado.toString())
   // .then(() => console.log('Success'))

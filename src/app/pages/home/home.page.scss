@@ -13,7 +13,40 @@ ion-content{
     align-items: center ;
 }
 ion-input{
-    width: 50%;
+    width: 70%;
     height: 50px;
     padding : 10px;
+    border-bottom: 1px  solid #000;
 }
+
+.botao{
+    padding: 10px;
+    width: 80%;
+    margin-top: 20px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#botoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    margin-top: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#resultado{
+    margin-top: 25px;
+}
+
